@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"> 
+  <meta charset="UTF-8">
   <meta name="author" content="Aman Kumar">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Aman Kumar</title>
   <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
+
 <body>
 
   <header>
-    <img id="logo" src="./images/logo.svg" alt="website logo" >
+    <img id="logo" src="./images/logo.svg" alt="website logo">
     <div id="wrapper">
       <h1 id="name">Aman Kumar</h1>
       <h2 id="title">frontend developer</h2>
@@ -19,15 +21,31 @@
   </header>
 
   <!-- for horizontal rule after the header -->
-  <hr >
+  <hr>
 
   <main>
     <!-- about me section -->
     <section id="me">
-      <img id="my-image" src="./images/me.jpg" alt="image of Aman Kumar">
-      <p id="about-me">
-        Hi, I am Aman Kumar. This is the about me section. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nobis repellat vitae repudiandae explicabo dolorum nam vel quas nostrum architecto? Odio, optio reiciendis suscipit labore pariatur sed reprehenderit fugit! Maiores.
+
+      <img id="image-me" src="./images/me.jpg" alt="image of Aman Kumar">
+
+      <!-- nav for about me and contact me buttons -->
+      <nav id="nav-me">
+        <button id="about-me-btn" class="nav-button selected">About Me</button>
+        <button id="contact-me-btn" class="nav-button">Contact Me</button>
+      </nav>
+
+      <p id="about-me" class="para">
+        Hi, I am Aman Kumar. This is the about me section. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
+        nobis repellat vitae repudiandae explicabo dolorum nam vel quas nostrum architecto? Odio, optio reiciendis
+        suscipit labore pariatur sed reprehenderit fugit! Maiores.
       </p>
+
+      <p id="contact-me" class="para remove">
+        You can contact me via email. To send me an email, click 
+        <a href="mailto: kumaraman140775@gmail.com">here</a>
+      </p>
+
     </section>
 
     <!-- featured work -->
@@ -62,6 +80,9 @@
 
   </main>
 
+  <!-- linking the script file -->
+  <script src="./js/app.js"></script>
 
 </body>
+
 </html>

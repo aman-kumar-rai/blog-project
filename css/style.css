@@ -6,7 +6,7 @@
 body,
 html {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   font-family: sans-serif;
 }
 
@@ -74,20 +74,112 @@ hr {
 }
 
 /* style for main and its children */
+main{
 
-
-/* style for me section and its children */
-#me{
-  padding: 4px;
-
-  margin: 4px 0px;
+  /* flex-container part */
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-#my-image{
+/* style for me section and its children */
+/* this is the section-container for the whole me section */
+#me{
+  display: flex;
+  flex-flow: column nowrap;
+
+  background-color: #59c061;
+}
+
+
+#image-me{
   width: 100%;
+  max-width: 750px;
+  margin: 4px auto;
+}
+
+#nav-me{
+  /* flex-container part */
+  display: flex;
+  flex-flow: row wrap;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 50px;
+  margin: 4px 0px;
+
+  /* margin: 4px; */
+  background-color: #6cc273;
+  /* opacity: 0.3; */
+}
+
+.nav-button{
+  min-height: 48px;
+  flex-basis: 150px;
+
+  font-size: 1.2em;
+  font-weight: 200;
+  font-style: italic;
+  word-spacing: 5px;
+
+  background-color: transparent;
+  color: white;
+  
+  border: none;
+  cursor: pointer;
+}
+
+/* common style for both paragraphs */
+.para{
+  font-size: 1.3em;
+  font-weight: 200;
+
+  letter-spacing: 2px;
+  word-spacing: 4px;
+
+  margin: 4px 0px;
+  padding: 4px;
+
+  background-color: #e5f3fa;
+  color: #08310c;
+  /* color: #0d8fd9; */
+
+  /* background-color: #e26867;
+  color: white; */
+  /* color: black; */
+
+  /* background-color: #4a3f60;
+  color: white; */
+
+  /* background-color: #84cbc5;
+  color: white; */
+
+  /* background-color: #84cbc5;
+  color: white; */
+}
+
+/* this is the about me paragraph */
+#about-me{
+  
+}
+
+/* this is the contact me paragraph */
+#contact-me{
+
+}
+
+/* class to be used when an element has to be removed from DOM */
+.remove{
+  display: none;
+}
+
+/* class for currently selected button, which can either be about me or contact me */
+.selected{
+  border: 2px solid #cbebcd;
 }
 
 /* style for featured work and its children */
+
 
 
 /* media queries */
@@ -120,9 +212,9 @@ hr {
 
 }
 
-@media screen and (min-width: 950px){
+@media screen and (min-width: 750px){
   body{
-    width: 950px;
+    width: 750px;
     margin: 0 auto;
   }
 }
