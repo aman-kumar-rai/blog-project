@@ -92,7 +92,7 @@ main{
   display: flex;
   flex-flow: column nowrap;
 
-  background-color: #59c061;
+  /* background-color: #59c061; */
 }
 
 
@@ -111,7 +111,6 @@ main{
   justify-content: center;
 
   min-height: 50px;
-  background-color: #6cc273;
 }
 
 .nav-button{
@@ -123,8 +122,8 @@ main{
   font-style: italic;
   word-spacing: 5px;
 
-  background-color: transparent;
-  color: white;
+  background-color: rgb(255, 246, 246);
+  color: #7d97ad;
   
   border: none;
   cursor: pointer;
