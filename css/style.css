@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* margin: 0px; */
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -10,10 +9,6 @@ html {
   width: 100%;
   /* height: 100%; */
   font-family: sans-serif;
-}
-
-body{
-  border: 2px solid yellow;
 }
 
 /* style for header and its children */
@@ -79,8 +74,7 @@ hr {
 }
 
 /* style for main and its children */
-main{
-
+main {
   /* flex-container part */
   display: flex;
   flex-flow: column nowrap;
@@ -88,21 +82,19 @@ main{
 
 /* style for me section and its children */
 /* this is the section-container for the whole me section */
-#me{
+#me {
   display: flex;
   flex-flow: column nowrap;
 
   /* background-color: #59c061; */
 }
 
-
-#image-me{
+#image-me {
   width: 100%;
-  /* max-width: 750px; */
   margin: 0px auto;
 }
 
-#nav-me{
+#nav-me {
   /* flex-container part */
   display: flex;
   flex-flow: row wrap;
@@ -113,7 +105,7 @@ main{
   min-height: 50px;
 }
 
-.nav-button{
+.nav-button {
   min-height: 48px;
   flex-basis: 150px;
 
@@ -124,18 +116,19 @@ main{
 
   background-color: rgb(255, 246, 246);
   color: #7d97ad;
-  
+
   border: none;
   cursor: pointer;
 }
 
 /* common style for both paragraphs */
-.para{
+.para {
   font-size: 1.3em;
   font-weight: 200;
 
   letter-spacing: 2px;
   word-spacing: 4px;
+  word-wrap: break-word;
 
   margin: 4px 0px 0px;
   padding: 4px;
@@ -146,39 +139,38 @@ main{
   border-bottom: 1px solid #59c061;
 }
 
-/* this is the about me paragraph */
-#about-me{
-  
-}
-
 /* this is the contact me paragraph */
-#contact-me>a:hover{
+#contact-me > a:hover {
   color: purple;
 }
 
-#contact-me>a:active{
+#contact-me > a:active {
   color: red;
 }
 
-
 /* class to be used when an element has to be removed from DOM */
-.remove{
+.remove {
   display: none;
 }
 
 /* class for currently selected button, which can either be about me or contact me */
-.selected{
+.selected {
   border: 2px solid #cbebcd;
+  background-color: #e5f3fa;
+  color: #08310c;
+/* 
+  color: black;
+  background-color: #c8d6e2; */
+
 }
 
 /* style for featured work and its children */
-#featured-work{
+#featured-work {
   display: flex;
   flex-flow: column nowrap;
 }
 
-#featured-work-title{
-
+#featured-work-title {
   margin: 10px 4px 2px;
 
   color: #7d97ad;
@@ -187,8 +179,7 @@ main{
   word-spacing: 6px;
 }
 
-#card-container{
-
+#card-container {
   /* flex-container part */
   display: flex;
   flex-flow: column nowrap;
@@ -196,45 +187,46 @@ main{
   justify-content: center;
 
   /* border: 2px solid seagreen; */
-  padding: 10px 0px;
+  padding: 10px 5px;
 }
 
-.card{
-
+.card {
   margin-bottom: 10px;
-  /* border: 2px solid salmon; */
-
-  /* width: 100%; */
-  flex-basis: 450px;
 
   /* flex-container part */
   display: flex;
   flex-flow: column nowrap;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
-
 }
 
-.project-image-container{
-
-  width: 100%;
-  /* max-width: 300px; */
+.project-image-container {
+  border: 2px solid rebeccapurple;
 
   /* flex-container part */
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
+
+  /* to make sure that the image overflow does not disturb the UI */
+  overflow: hidden;
+
+  max-width: 350px;
+  max-height: 250px;
 }
 
-.project-image{
+.project-image {
   width: 100%;
-  max-width: 400px;
+  /* height: 100%; */
 }
 
-.project-title{
+.project-image:hover {
+  opacity: 0.6;
+}
 
-  margin: 4px auto;
+.project-title {
+  margin: 10px auto;
 
   color: #2d3c49;
   text-transform: uppercase;
@@ -246,14 +238,15 @@ main{
   word-spacing: 4px;
 }
 
-.github-link{
+.github-link {
   margin: 4px auto;
 
   color: #2d3c49;
   text-align: center;
 }
 
-.project-separator{
+.project-separator {
+  width: 100%;
   border: 1px solid #59c061;
   margin: 0px 4px 10px 4px;
 }
@@ -263,45 +256,42 @@ main{
   #wrapper {
     flex-grow: 2;
   }
-  
   #logo {
     flex-grow: 1;
   }
-
-
 }
 
-
-@media screen and (min-width: 630px){
-
-  header{
+@media screen and (min-width: 550px) {
+  header {
     justify-content: space-between;
   }
 
-  #wrapper{
+  #wrapper {
     flex-grow: 0;
     flex-basis: 400px;
   }
 
-  #logo{
+  #logo {
     flex-grow: 0;
     flex-basis: 150px;
   }
 
-  #card-container{
+  #card-container {
     flex-flow: row wrap;
   }
 
-  .card{
+  .card {
     flex-basis: 300px;
     margin-right: 10px;
   }
-
 }
 
-@media screen and (min-width: 1050px){
-  body{
-    width: 1050px;
+@media screen and (min-width: 950px) {
+  body {
+    width: 950px;
     margin: 0 auto;
+  }
+  html {
+    background-color: whitesmoke;
   }
 }
