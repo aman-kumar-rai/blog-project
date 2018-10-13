@@ -152,9 +152,14 @@ main{
 }
 
 /* this is the contact me paragraph */
-#contact-me{
-
+#contact-me>a:hover{
+  color: purple;
 }
+
+#contact-me>a:active{
+  color: red;
+}
+
 
 /* class to be used when an element has to be removed from DOM */
 .remove{
