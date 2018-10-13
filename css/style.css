@@ -201,7 +201,7 @@ main {
 }
 
 .project-image-container {
-  border: 2px solid rebeccapurple;
+  border: 1px solid #59c061;
 
   /* flex-container part */
   display: flex;
