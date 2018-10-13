@@ -179,6 +179,28 @@ main{
 }
 
 /* style for featured work and its children */
+#featured-work{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#featured-work-title{
+
+  color: #7d97ad;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+#card-container{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.card{
+  max-width: 450px;
+  flex-grow: 1;
+}
+
 
 
 /* media queries */
