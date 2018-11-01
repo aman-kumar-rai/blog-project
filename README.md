@@ -6,11 +6,11 @@
 *To open it up, open the index.html file in a web browser
 
 ```
-  git clone abc
-  cd abc
+  git clone https://github.com/aman-kumar-rai/blogProject.git blog-project
+  cd blog-project
 ```
 
-#Contribution
+##Contribution
 It is a fairly basic blog project. But if you still have any suggestions and want to contribute, please create a pull request
 
 
