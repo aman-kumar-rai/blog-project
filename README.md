@@ -1,18 +1,23 @@
-#Blog Project for udacity frontend developer nanodegree
+# Blog Project
 
-##Installation
+## Table of Contents
 
-*clone the repository and cd into it
-*To open it up, open the index.html file in a web browser
+* [Instructions](#instructions)
+* [Dependencies](#dependencies)
+* [Contributing](#contributing)
 
-```
-  git clone https://github.com/aman-kumar-rai/blogProject.git blog-project
-  cd blog-project
-```
+## Instructions
 
-##Contribution
-It is a fairly basic blog project. But if you still have any suggestions and want to contribute, please create a pull request
+To get started, open [the GitHub pages site for this repo](https://https://aman-kumar-rai.github.io/blog-project/)
 
+This is just a demo project built as a part of the udacity frontend developer nanodegree program. The task was to create a responsive blog website. The content is just a filler. It is not my actual website.
 
-##License
-It is a pretty minor project and you are free to use it when ever and were ever you want.
+To view my actual blog website, [please click this link](https://deadshot.space)
+
+## Dependencies
+
+This project is built using vanilla JS in a few places. So, no javascript library is needed. Nor have i used any css frameworks.
+
+## Contributing
+
+This project is pretty much complete. I don't know of any bugs and i don't think that i will update the project because it's a demo for a responsive webpage. Feel free to use it in what ever way you need. In case you can spot some bug, please create a pull request. Follow the standard coding practices if you feel like creating a pull request.
